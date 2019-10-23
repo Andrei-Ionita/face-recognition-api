@@ -26,7 +26,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 app.get("/", (req,res) => {
-    res.send(database.users);
+    res.send("You hit the root route");
 });
 
 app.post("/signin", (req,res) => {signin.signinHandler(req, res, db, bcrypt)});
